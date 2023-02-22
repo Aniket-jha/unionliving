@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_category_rooms",
+  "info": {
+    "displayName": "Rooms"
+  },
+  "options": {},
+  "attributes": {
+    "RoomTitle": {
+      "type": "string"
+    },
+    "RoomContent": {
+      "type": "text"
+    },
+    "RoomImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

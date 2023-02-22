@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Properties",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PropertyTitle": {
+      "type": "string"
+    },
+    "PropertyStartingPrice": {
+      "type": "string"
+    },
+    "YoutubeVideo": {
+      "type": "string"
+    },
+    "PropertyLocation": {
+      "type": "string"
+    },
+    "PropertyImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "PropertyMap": {
+      "type": "string"
+    },
+    "AboutProperty": {
+      "type": "text"
+    },
+    "ComparisonImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "SoldOutImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Rooms": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-category.rooms"
+    }
+  }
+}

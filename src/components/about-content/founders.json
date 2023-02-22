@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_about_content_founders",
+  "info": {
+    "displayName": "Founders"
+  },
+  "options": {},
+  "attributes": {
+    "FounderName": {
+      "type": "string"
+    },
+    "FounderDesignation": {
+      "type": "string"
+    },
+    "FounderImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "founderLinkedin": {
+      "type": "string"
+    }
+  }
+}
