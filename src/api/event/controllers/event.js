@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * survey controller
+ * event controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::survey.survey');
+module.exports = createCoreController('api::event.event');
