@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "about_contents",
+  "collectionName": "communities",
   "info": {
-    "singularName": "about-content",
-    "pluralName": "about-contents",
-    "displayName": "AboutContent",
+    "singularName": "community",
+    "pluralName": "communities",
+    "displayName": "Community",
     "description": ""
   },
   "options": {
@@ -12,9 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "TeamImage": {
+    "ImageLeft": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -23,80 +23,59 @@
         "audios"
       ]
     },
-    "Founders": {
+    "ImageRight": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "BannerTitle": {
+      "type": "string"
+    },
+    "BannerSubtitle": {
+      "type": "string"
+    },
+    "BannerTitleIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "BannerSubtitleIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Category": {
       "type": "component",
       "repeatable": true,
-      "component": "about-content.founders"
+      "component": "community.categories"
     },
-    "VisionImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
+    "EventGallery": {
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
-    },
-    "TechImage": {
+      ],
       "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "DesignImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "CommunityImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "PortfolioImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "VisionContent": {
-      "type": "text"
-    },
-    "TechContent": {
-      "type": "text"
-    },
-    "DesignContent": {
-      "type": "text"
-    },
-    "CommunityContent": {
-      "type": "text"
-    },
-    "PortfolioContent": {
-      "type": "text"
+      "multiple": true
     }
   }
 }
