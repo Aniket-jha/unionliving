@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_surveys",
+  "info": {
+    "singularName": "community-survey",
+    "pluralName": "community-surveys",
+    "displayName": "CommunitySurvey"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Age": {
+      "type": "integer"
+    },
+    "ContactNumber": {
+      "type": "string"
+    },
+    "Alochol": {
+      "type": "string"
+    },
+    "Guest": {
+      "type": "string"
+    },
+    "Queries": {
+      "type": "text"
+    }
+  }
+}
